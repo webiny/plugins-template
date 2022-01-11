@@ -1,4 +1,5 @@
 import cliWorkspaces from "@webiny/cli-plugin-workspaces";
+import cliWatch from "@webiny/cli-plugin-deploy-pulumi";
 
 // Scaffolds.
 import cliScaffold from "@webiny/cli-plugin-scaffold";
@@ -9,6 +10,7 @@ export default {
     cli: {
         plugins: [
             cliWorkspaces(),
+            cliWatch(),
             cliScaffold(),
             cliScaffoldReactComponent()
         ]

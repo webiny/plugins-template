@@ -1,21 +1,45 @@
 {
-  "compilerOptions": {
-    "target": "es6",
-    "allowJs": true,
-    "forceConsistentCasingInFileNames": true,
-    "allowSyntheticDefaultImports": true,
-    "moduleResolution": "node",
-    "module": "esnext",
-    "lib": ["dom", "dom.iterable"],
-    "esModuleInterop": true,
-    "declaration": true,
-    "composite": true,
-    "noEmit": false,
-    "jsx": "preserve",
-    "emitDeclarationOnly": true,
-    "baseUrl": ".",
-    "paths": {},
-    "typeRoots": ["node_modules/@types", "./types"]
-  },
-  "exclude": ["node_modules", "dist", "**jest**", "**resources.js"]
+	"compilerOptions": {
+		"target": "es6",
+		"allowJs": true,
+		"forceConsistentCasingInFileNames": true,
+		"allowSyntheticDefaultImports": true,
+		"moduleResolution": "node",
+		"module": "esnext",
+		"lib": [
+			"dom",
+			"dom.iterable"
+		],
+		"esModuleInterop": true,
+		"declaration": true,
+		"composite": true,
+		"noEmit": false,
+		"jsx": "preserve",
+		"emitDeclarationOnly": true,
+		"baseUrl": ".",
+		"paths": {
+			"@guild-ui/button": [
+				"./packages/button/src"
+			],
+			"@guild-ui/button/*": [
+				"./packages/button/src/*"
+			],
+			"@custom-components/button": [
+				"./packages/button/src"
+			],
+			"@custom-components/button/*": [
+				"./packages/button/src/*"
+			]
+		},
+		"typeRoots": [
+			"node_modules/@types",
+			"./types"
+		]
+	},
+	"exclude": [
+		"node_modules",
+		"dist",
+		"**jest**",
+		"**resources.js"
+	]
 }
