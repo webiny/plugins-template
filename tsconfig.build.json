@@ -29,6 +29,18 @@
 			],
 			"@custom-components/button/*": [
 				"./packages/button/src/*"
+			],
+			"@custom/button": [
+				"./packages\\button/src"
+			],
+			"@custom/button/*": [
+				"./packages\\button/src/*"
+			],
+			"@custom/banner": [
+				"./packages\\banner/src"
+			],
+			"@custom/banner/*": [
+				"./packages\\banner/src/*"
 			]
 		},
 		"typeRoots": [
